@@ -27,7 +27,7 @@ header {
     animation-direction: alternate;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 960px 250px;
+    background-size: 100% 100%;
     margin: 0 auto;
     margin-top: 10px;
 }
@@ -297,7 +297,7 @@ section p {
     background-image: url(img/article_img.jpeg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 740px 283px;
+    background-size: 100% 100%;
     border-radius: 5px;
 }
 
@@ -331,14 +331,40 @@ footer {
   [class*="col-"] {
     width: 100%;
   }
+  nav ul {
+    margin: 0;
+  }
+  nav ul li {
+    margin: 0;
+  }
+  nav ul li a {
+    font-size: 6pt;
+  }
   aside {
+    height: 100px;
+  }
+  article {
+    float: none;
     display: block;
+    clear: both;
+  }
+
+  #img{
+    display: block;
+    clear: both;
   }
   section {
     float: none;
     display: block;
+    clear: both;
   }
+
+  input{
+    width: 100%;
+  }
+
   footer {
     display: block;
+    clear: both;
   }
 }
